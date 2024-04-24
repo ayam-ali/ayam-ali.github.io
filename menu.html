@@ -47,7 +47,7 @@
 
             // Add event listeners to flavor buttons
             flavorButtons.forEach(button => {
-                button.addEventListener('click', () => {
+                button.addEventListener('mouseenter', () => {
                     if (selectedFlavorButton) {
                         selectedFlavorButton.classList.remove('selected');
                     }
@@ -60,7 +60,7 @@
 
             // Add event listeners to size buttons (you can handle this similarly)
             sizeButtons.forEach(button => {
-                button.addEventListener('click', () => {
+                button.addEventListener('mouseenter', () => {
                     if (selectedSizeButton) {
                         selectedSizeButton.classList.remove('selected');
                     }
