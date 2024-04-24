@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <section class="container">
+        <div class="section-header"   data-aos="fade-up">
+            <h2>Gallery</h2>
+            <p>Check <span>Our Gallery</span></p>
+        </div>
+        <!-- swipper main container  img/cakes/strawberry_large.jpg -->
+        <div class="swiper-container swiper" >
+            <div class="swiper-wrapper align-items-center">
+                <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
+                        href="img/cakes/original_large.jpg"><img src="img/cakes/original_large.jpg" class="img-fluid"
+                            alt=""></a></div>
+                <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
+                        href="img/cakes/strawberry_large.jpg"><img src="img/cakes/strawberry_large.jpg"
+                            class="img-fluid" alt=""></a></div>
+                <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
+                        href="img/cakes/blueberry_large.jpg"><img src="img/cakes/blueberry_large.jpg" class="img-fluid"
+                            alt=""></a></div>
+                <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
+                        href="img/cakes/raspberry_large.jpg"><img src="img/cakes/raspberry_large.jpg" class="img-fluid"
+                            alt=""></a></div>
+                <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
+                        href="img/cakes/original_small.jpg"><img src="img/cakes/original_small.jpg" class="img-fluid"
+                            alt=""></a></div>
+                <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
+                        href="img/cakes/strawberry_small.jpg"><img src="img/cakes/strawberry_small.jpg"
+                            class="img-fluid" alt=""></a></div>
+                <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
+                        href="img/cakes/blueberry_small.jpg"><img src="img/cakes/blueberry_small.jpg" class="img-fluid"
+                            alt=""></a></div>
+
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+
+
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            slidesPerView: 3,
+            spaceBetween: 10,
+            freeMode: true,
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                dynamicBullets: true,
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
+
+</body>
+
+</html>

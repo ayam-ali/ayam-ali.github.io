@@ -1,0 +1,582 @@
+/* Colors */
+:root {
+    --color-default: #e2eaf1;
+    --color-primary: #f7b9ce;
+    --color-secondary: #f8f8fa;
+}
+
+
+* {
+    padding-top: 3px;
+
+}
+
+select.form-control {
+    -webkit-appearance: menulist !important;
+    -moz-appearance: menulist !important;
+    -ms-appearance: menulist !important;
+    -o-appearance: menulist !important;
+    appearance: menulist !important;
+}
+
+
+
+/* navbar */
+#nav_bars {
+    background: var(--color-primary);
+}
+
+/* for hero page */
+.jumbotron {
+    color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/hero_cheesecake.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    min-height: 60vh;
+    padding: 160px 0 60px 0;
+
+}
+
+
+
+.jumbotron h2 {
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--color-secondary);
+    font-family: var(--font-primary);
+}
+
+.jumbotron h2 span {
+    color: var(--color-primary);
+
+}
+
+.jumbotron p {
+    color: #ececf3;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.jumbotron .order {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 36px;
+    border-radius: 50px;
+    transition: 0.5s;
+    text-decoration: none;
+    color: var(--color-default);
+    background: var(--color-primary);
+    box-shadow: 0 8px 28px rgba(153, 108, 108, 0.2);
+}
+
+.jumbotron .order:hover {
+    background: rgba(206, 18, 18, 0.8);
+    box-shadow: 0 8px 28px rgba(206, 18, 18, 0.45);
+}
+
+.jumbotron .phone {
+    font-weight: 500;
+    margin-right: 20px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 36px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.5s;
+    color: var(--color-default);
+    background: var(--color-primary);
+    box-shadow: 0 8px 28px rgba(153, 108, 108, 0.2);
+}
+
+.jumbotron .phone:hover {
+    background: rgba(206, 18, 18, 0.8);
+    box-shadow: 0 8px 28px rgba(206, 18, 18, 0.45);
+}
+
+
+
+
+
+/* ==================== about start  ====================*/
+
+#about_index {
+
+    margin-bottom: 100px;
+}
+
+.about .about-img {
+    min-height: 500px;
+}
+
+.about h3 {
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-family: var(--font-secondary);
+}
+
+.about .call-us {
+    left: 10%;
+    right: 10%;
+    bottom: 10%;
+    background-color: #fff;
+    box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    text-align: center;
+}
+
+.about .call-us h4 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-family: var(--font-default);
+}
+
+.about .call-us p {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.about .content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about .content ul li {
+    padding: 0 0 8px 26px;
+    position: relative;
+}
+
+.about .content ul i {
+    position: absolute;
+    font-size: 20px;
+    left: 0;
+    top: -3px;
+    color: var(--color-primary);
+}
+
+.about .content p:last-child {
+    margin-bottom: 0;
+}
+
+.about .play-btn {
+    width: 94px;
+    height: 94px;
+    background: radial-gradient(var(--color-primary) 50%, rgba(206, 18, 18, 0.4) 52%);
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    left: calc(50% - 47px);
+    top: calc(50% - 47px);
+    overflow: hidden;
+}
+
+.about .play-btn:before {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    animation-delay: 0s;
+    animation: pulsate-btn 2s;
+    animation-direction: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps;
+    opacity: 1;
+    border-radius: 50%;
+    border: 5px solid rgba(206, 18, 18, 0.7);
+    top: -15%;
+    left: -15%;
+    background: rgba(198, 16, 0, 0);
+}
+
+.about .play-btn:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-40%) translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid #fff;
+    z-index: 100;
+    transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.about .play-btn:hover:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-40%) translateY(-50%);
+    width: 0;
+    height: 0;
+    border: none;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid #fff;
+    z-index: 200;
+    animation: none;
+    border-radius: 0;
+}
+
+.about .play-btn:hover:after {
+    border-left: 15px solid var(--color-primary);
+    transform: scale(20);
+}
+
+@keyframes pulsate-btn {
+    0% {
+        transform: scale(0.6, 0.6);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1, 1);
+        opacity: 0;
+    }
+}
+
+/* ==================== about end  ====================*/
+
+/* ==================== Menu start  ====================*/
+
+/* Add slide left animation */
+#menu_index {
+    margin-top: 50px;
+    margin-bottom: 100px;
+
+}
+
+/* Center the flavor buttons horizontally */
+.flavor-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Style the image container */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Style the flavor buttons */
+.flavor-btn {
+    background-color: var(--color-default);
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Add hover effect for flavor buttons */
+.flavor-btn:hover {
+    background-color: var(--color-secondary);
+}
+
+/* Style the size buttons */
+.size-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: 20px;
+}
+
+.size-btn {
+    background-color: var(--color-default);
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Add hover effect for size buttons */
+.size-btn:hover {
+    background-color: #ddd;
+}
+
+
+/* Add slide left animation */
+.slide-left {
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Style the buttons */
+.flavor-btn,
+.size-btn {
+    font-weight: 500;
+    font-size: 14px;
+    align-items: center;
+    width: 130px;
+    letter-spacing: 1px;
+    display: inline-block;
+    border-radius: 50px;
+    transition: 0.5s;
+    text-decoration: none;
+    color: var(--color-default);
+    background: var(--color-primary);
+    box-shadow: 0 8px 28px rgba(153, 108, 108, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+/* Add hover effect for all buttons */
+.flavor-btn:hover,
+.size-btn:hover {
+    background-color: #ddd;
+}
+
+/* Style the selected buttons */
+.selected {
+    background-color: var(--color-primary);
+    /* Change to your desired color */
+    color: var(--color-default);
+
+}
+
+@media (max-width: 480px) {
+
+    .flavor-btn,
+    .size-btn {
+        font-weight: 200;
+        font-size: 9.5px;
+        align-items: center;
+        width: 95px;
+        border-radius: 30px;
+        margin: 2px;
+
+
+    }
+
+}
+
+
+
+/* ==================== menu end ==================== */
+
+
+
+
+/* ==================== gallary start ==================== */
+
+
+#gallary_index {
+
+    margin-bottom: 100px;
+}
+
+.swiper {
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper .swiper-pagination {
+    margin-top: 20px;
+    position: relative;
+}
+
+
+
+.swiper .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: var(--color-primary);
+}
+
+.swiper .swiper-slide-active {
+    text-align: center;
+}
+
+
+/* ==================== gallary end ==================== */
+
+
+/* ==================== testimonial start ==================== */
+
+
+#testimonial_index {
+
+    margin: 50px;
+}
+
+.testimonial {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.tt-swipe {
+    height: 100%;
+
+}
+
+.testimonial p {
+
+    text-decoration-color: #e6e6e6;
+    text-wrap: wrap;
+
+}
+
+.tt-swipe .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.tt-swipe .swiper-slide img {
+    display: block;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tt-swipe .swiper-pagination {
+    margin-top: 20px;
+    position: relative;
+}
+
+
+
+.tt-swipe .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: var(--color-primary);
+}
+
+.tt-swipe .swiper-slide-active {
+    text-align: center;
+}
+
+
+
+
+/* ==================== testimonial end ==================== */
+
+
+
+
+
+
+/* ==================== order form starts  ==================== */
+
+.order>h1 {
+    text-align: center;
+}
+
+.order .info {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.order #order_menu {
+    width: 50%;
+    height: 50%;
+}
+
+.order_form {
+    margin-bottom: 150px;
+
+}
+
+.order_form_dropdown {
+    /* Reset. */
+    position: relative;
+}
+
+.order_form_dropdown:before {
+    /* Arrow */
+    appearance: none;
+    background-image: url("https://fontawesome.com/icons/angle-down?f=classic&s=solid");
+    background-repeat: no-repeat;
+    background-position: right 0.7rem top 50%;
+    background-size: 0.65rem auto;
+}
+
+.order_form_dropdown:after {
+    /* Arrow */
+    appearance: none;
+    background-image: url("https://fontawesome.com/icons/angle-up?f=classic&s=solid");
+    background-repeat: no-repeat;
+    background-position: right 0.7rem top 50%;
+    background-size: 0.65rem auto;
+}
+
+input:invalid {
+    box-shadow: 0 0 5px 1px var(--color-primary);
+}
+
+input:focus:invalid {
+    box-shadow: none;
+}
+
+select:invalid {
+    box-shadow: 0 0 5px 1px var(--color-primary);
+}
+
+select:focus:invalid {
+    box-shadow: none;
+}
+
+/* ==================== order form end  ==================== */
+
+
+
+
+
+
+
+
+/* ==================== footer  ====================*/
+
+.footer {
+    /* background: #061D25; */
+    padding: 10px 0;
+}
+
+.footer a {
+    color: #70726F;
+    font-size: 20px;
+    padding: 10px;
+    transition: all .5s ease;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer a:hover {
+    color: rgb(156, 22, 22);
+}
+
+/* ==================== footer end ====================*/
