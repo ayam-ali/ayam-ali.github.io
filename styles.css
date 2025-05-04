@@ -480,7 +480,17 @@ select.form-control {
     text-align: center;
 }
 
+.swiper-button-next,
+.swiper-button-prev {
+    color: #333;  /* arrow color */
+    width: 30px;
+    height: 30px;
+}
 
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 24px;
+}
 
 
 /* ==================== testimonial end ==================== */
