@@ -480,25 +480,6 @@ select.form-control {
     text-align: center;
 }
 
-#testimonial_index .swiper-button-next,
-#testimonial_index .swiper-button-prev {
-    color: #333;
-    width: 30px;
-    height: 30px;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
-}
-
-#testimonial_index .swiper-button-next {
-    right: 10px;
-}
-
-#testimonial_index .swiper-button-prev {
-    left: 10px;
-}
-
-
 /* ==================== testimonial end ==================== */
 
 
