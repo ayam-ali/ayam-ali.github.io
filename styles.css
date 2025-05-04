@@ -480,16 +480,22 @@ select.form-control {
     text-align: center;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
-    color: #333;  /* arrow color */
+#testimonial_index .swiper-button-next,
+#testimonial_index .swiper-button-prev {
+    color: #333;
     width: 30px;
     height: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
 }
 
-.swiper-button-next::after,
-.swiper-button-prev::after {
-    font-size: 24px;
+#testimonial_index .swiper-button-next {
+    right: 10px;
+}
+
+#testimonial_index .swiper-button-prev {
+    left: 10px;
 }
 
 
