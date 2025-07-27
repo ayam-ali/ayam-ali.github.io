@@ -362,11 +362,60 @@ select.form-control {
         border-radius: 30px;
         margin: 2px;
 
-
     }
 
 }
 
+/* new code */
+/*@media (max-width: 480px){
+    .image-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    }
+
+   .size-container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+        margin-top: 10px;
+   }
+*/
+
+/* Default: Desktop/laptop */
+.image-container {
+    display: flex;
+    flex-direction: row; /* image left, buttons right */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.size-container {
+    display: flex;
+    flex-direction: column; /* stack buttons vertically on laptop */
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 0;
+    gap: 10px;
+}
+
+/* Mobile: ≤480px */
+@media (max-width: 480px) {
+    .image-container {
+        flex-direction: column; /* stack image and buttons vertically */
+        align-items: center;
+    }
+
+    .size-container {
+        flex-direction: row; /* buttons side-by-side under image */
+        margin-left: 0;
+        margin-top: 15px;
+        gap: 10px;
+    }
+} 
 
 
 /* ==================== menu end ==================== */
