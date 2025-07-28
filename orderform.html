@@ -54,11 +54,13 @@
                         <a class="nav-link active" aria-current="Gallary" href="index.html#gallary_index">Gallary</a>
                     </li>
 
-                    <!-- Order Form -->
+                    <!-- Order Form 
                     <li class="nav-item">
                         <a class="nav-link btn btn-outline-info" href="orderform.html">Order Here</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="orderform.html">Order Here</a>
                     </li>
-
 
                 </ul>
 
@@ -81,12 +83,12 @@
             <p>
                 <i>Order the most delicious cheesecake now! <br>
 
-                    If you have any questions, please feel free to contact us!</i> <br><br>
+                    If you have any questions, please contact us.</i> <br><br>
 
-                <strong>Instagram: @cakeme_am</strong><br>
+              <!--  <strong>Instagram: @cakeme_am</strong><br>
                 <strong> Email: cakeme.am@gmail.com </strong><br> <br>
-                For reference:<br>
-                1 Large cheesecake can feed between 10 - 12 people<br>
+                For reference:<br> -->
+                1 Large (9-inch) cheesecake can feed between 10 - 12 people<br>
             </p>
             <!-- image menu-->
             <img class="order img-fluid" id="order_menu" src="img/order_menu.png">
@@ -133,7 +135,7 @@
                     aria-label="size select" title="Please select your size" required>
                     <option selected value="">Select Size</option>
                     <option value="Slice">Slice ~ $6.49</option>
-                    <option value="Large">Large ~ $34.49</option>
+                    <option value="Large">Large ~ $44.49</option>
                     <option value="Multiple">Multiple Orders ( 2 or more )</option>
                 </select>
                 <!-- <label for="fullname" class="form-label"></label> -->
@@ -194,7 +196,7 @@
             <div class="container">
                 <p>
                     <!-- <b>Consent Form: </b><br> -->
-                    <i>I understand that delivery will cost me $5 fee<br>
+                    <i>I understand that delivery will cost me a $5 fee<br>
                         (separate from the cheesecake cost)</i>
                 </p>
             </div>
@@ -324,7 +326,7 @@
 
 
             console.log(settings);
-            document.querySelector("#order_confirm_out").innerHTML = "We got your order! We will call you when it is ready!<br>If you want to order more, please refreash the page. Thank you.";
+            document.querySelector("#order_confirm_out").innerHTML = "Thank you for your order! We will contact you regarding payment and pickup/delivery. <br>If you would like to place another order, please refreash the page. Thank you!";
             // Uncomment the following line to send data to the Google Form
             console.log("Before the ajax")
             $.ajax(settings)
