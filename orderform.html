@@ -54,10 +54,7 @@
                         <a class="nav-link active" aria-current="Gallary" href="index.html#gallary_index">Gallary</a>
                     </li>
 
-                    <!-- Order Form 
-                    <li class="nav-item">
-                        <a class="nav-link btn btn-outline-info" href="orderform.html">Order Here</a>
-                    </li> -->
+                    <!-- Order Form -->
                     <li class="nav-item">
                         <a class="nav-link" href="orderform.html">Order Here</a>
                     </li>
@@ -84,10 +81,6 @@
                 <i>Order the most delicious cheesecake now! <br>
 
                     If you have any questions, please contact us.</i> <br><br>
-
-              <!--  <strong>Instagram: @cakeme_am</strong><br>
-                <strong> Email: cakeme.am@gmail.com </strong><br> <br>
-                For reference:<br> -->
                 1 Large (9-inch) cheesecake can feed between 10 - 12 people<br>
             </p>
             <!-- image menu-->
@@ -99,23 +92,15 @@
             <h2><strong>Order Form</strong></h2>
         </div>
         <form id="order_form_inputs" class="order_form row gy-2 gx-3 align-items-center">
-            <!-- action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSe3SOHJgvwV_ZDTEDjEHdqKPV0qpAw35PeLhVxp_g9htap_BA/formResponse"
-            method="POST"> -->
-
-
             <!-- name -->
             <div class="form-floating mb-3 col-12">
                 <input name="entry.532714139" id="order_fullname" type="text" class="form-control" id="order_fullname"
                     placeholder="" title="Please fill out your name" required>
                 <label for="order_fullname" class="form-label">Full name</label>
             </div>
-
-
             <!-- phone number -->
             <div class="form-floating mb-3 col-12">
-                <!-- <input id="order_phone" type="text" class="form-control" id="order_phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-                <label for="order_phone" class="form-label">Phone Number</label> pattern="^-?[0-9]?$" title="Numbers Only: eg. 5551112222" -->
-                <input name="entry.260774608" id="order_phone" type="text" class="form-control" title="Please fill out your phone number" required>
+               <input name="entry.260774608" id="order_phone" type="text" class="form-control" title="Please fill out your phone number" required>
                 <label for="order_phone" class="form-label">Phone Number</label>
             </div>
 
@@ -138,12 +123,7 @@
                     <option value="Large">Large ~ $44.49</option>
                     <option value="Multiple">Multiple Orders ( 2 or more )</option>
                 </select>
-                <!-- <label for="fullname" class="form-label"></label> -->
             </div>
-
-
-
-
 
             <!-- flavor -->
             <div class="form mb-3 col-12">
@@ -155,7 +135,6 @@
                     <option value="Cherry">Cherry</option>
                     <option value="Blueberry">Blueberry</option>
                 </select>
-                <!-- <label for="fullname" class="form-label"></label> -->
             </div>
 
             <div class="container">
@@ -177,7 +156,6 @@
                 </label>
             </div>
 
-
             <!-- pick up or delivary -->
             <div class="form mb-3 col-12">
                 <select name="entry.1469173899" id="order_pickup_delivery"
@@ -190,12 +168,10 @@
                     <option value="Delivery">Delivery - $5 fee within Harrisonburg
                         Area</option>
                 </select>
-                <!-- <label for="fullname" class="form-label"></label> -->
             </div>
 
             <div class="container">
                 <p>
-                    <!-- <b>Consent Form: </b><br> -->
                     <i>I understand that delivery will cost me a $5 fee<br>
                         (separate from the cheesecake cost)</i>
                 </p>
@@ -210,7 +186,6 @@
                     </option>
                     <option value="NA">Not applicable ~ I chose pickup</option>
                 </select>
-                <!-- <label for="fullname" class="form-label"></label> -->
             </div>
 
             <div class="container">
@@ -223,7 +198,6 @@
                 </p>
             </div>
 
-            <!-- address  onkeyup="generateAddress() -->
             <div class="form-floating mb-3 col-12">
 
                 <input id="order_addy" type="text" class="form-control" id="inputAddress""
@@ -247,8 +221,6 @@
                 <label for="inputZip" class="form-label">Zip</label>
             </div>
 
-            <!-- <input id="fulladdy" name="entry.1122564368" type="hidden" value=""> -->
-
             <!-- submit button  -->
 
             <div class="col-12" id="submitbox">
@@ -259,19 +231,6 @@
         </form>
 
     </div>
-
-    <!-- entry points
-    
-    name = entry.532714139
-    phone = entry.260774608
-    date = entry.1511446537
-    size = entry.150430871
-    flavor =entry.2117631882
-    multiorder = entry.1911536277
-    pickup =entry.1469173899
-    confirm =entry.985189264
-    address = entry.1122564368
-    -->
 
     <!-- get pull address -->
 
@@ -290,7 +249,7 @@
         const myForm = document.getElementById('order_form_inputs');
         myForm.addEventListener('submit', function (event) {
             event.preventDefault(); // Prevent form submission (optional)
-            sendDataToGoogleForm(); // Call your custom function
+            sendDataToGoogleForm(); // Call custom function
 
         });
         function sendDataToGoogleForm() {
@@ -327,7 +286,7 @@
 
             console.log(settings);
             document.querySelector("#order_confirm_out").innerHTML = "Thank you for your order! We will contact you regarding payment and pickup/delivery. <br>If you would like to place another order, please refreash the page. Thank you!";
-            // Uncomment the following line to send data to the Google Form
+            // send data to the Google Form
             console.log("Before the ajax")
             $.ajax(settings)
             console.log("I finished the ajax")
@@ -361,47 +320,3 @@
 </body>
 
 </html>
-
-
-<!-- function sendDataToGoogleForm() {
-
-            const address = [document.querySelector('#order_addy').value ,
-            document.querySelector('#order_city').value,
-            document.querySelector('#order_state').value ,
-            document.querySelector('#order_zip').value];
-        
-            //https://docs.google.com/forms/d/e/1FAIpQLSe3SOHJgvwV_ZDTEDjEHdqKPV0qpAw35PeLhVxp_g9htap_BA/viewform?usp=pp_url&entry.532714139=a&entry.260774608=a&entry.1511446537=a&entry.150430871=Slice&entry.2117631882=Original&entry.1911536277=a&entry.1469173899=Delivery&entry.985189264=Agree&entry.1122564368=a
-            const settings = {
-                "async": true,
-                "crossDomain": true,
-                "method": "POST",
-                "url": "https://docs.google.com/forms/d/e/&quot1FAIpQLSe3SOHJgvwV_ZDTEDjEHdqKPV0qpAw35PeLhVxp_g9htap_BA/formResponse",
-                "headers": {
-                    "content-type": "application/x-www-form-urlencoded"
-                },
-                "data": {
-                    "entry.532714139": document.querySelector('#order_fullname').value,
-                    "entry.260774608": document.querySelector('#order_phone').value,
-                    "entry.1511446537": document.querySelector('#order_datetime').value,
-                    "entry.150430871": document.querySelector('#order_size').value,
-                    "entry.2117631882": document.querySelector('#order_flavor').value,
-                    "entry.1911536277": document.querySelector('#order_multi_order').value,
-                    "entry.1469173899": document.querySelector('#order_pickup_delivery').value,
-                    "entry.985189264": document.querySelector('#order_deli_confirm').value,
-                    "entry.1122564368": address.join(" "),
-                    "submit": "Submit"
-
-                }
-            };
-
-            
-
-            console.log(settings);
-            document.querySelector("#order_confirm_out").innerHTML = "We got your order! We will call you when it is ready!<br>If you want to order more, please refreash the page. Thank you.";
-            // Uncomment the following line to send data to the Google Form
-            console.log("Before the ajax")
-            $.ajax(settings)
-            console.log("I finished the ajax")
-
-
-        } -->

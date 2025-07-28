@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-<!-- make me 12 photos of cheesecake with those 4 flavors. one photo for one flavor. small size is a slice. it will be from side angle. medium is half of the cake. it will be from 45 degree angle. large is full cake. it will be from top view -->
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,14 +20,13 @@
             <button class="flavor-btn" data-flavor="original">Original</button>
         </div>
         <div class="image-container">
-            <!-- Placeholder for the selected flavor image -->
+            <!-- selected flavor image -->
             <img id="flavor-image" src="" alt="Flavor Image" class="slide-left"
             width="390" 
             height="390">
             <div class="size-container">
-                <!-- Size buttons -->
+                <!-- size buttons -->
                 <button class="size-btn" data-size="small">Slice</button>
-                <!-- <button class="size-btn" data-size="small">Medium</button> -->
                 <button class="size-btn" data-size="large">Large</button>
             </div>
         </div>
@@ -60,7 +56,7 @@
                 });
             });
 
-            // Add event listeners to size buttons (you can handle this similarly)
+            // Add event listeners to size buttons
             sizeButtons.forEach(button => {
                 button.addEventListener('mouseenter', () => {
                     if (selectedSizeButton) {

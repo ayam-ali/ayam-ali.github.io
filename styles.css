@@ -366,23 +366,6 @@ select.form-control {
 
 }
 
-/* new code */
-/*@media (max-width: 480px){
-    .image-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    }
-
-   .size-container {
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin-left: 0;
-        margin-top: 10px;
-   }
-*/
-
 /* Default: Desktop/laptop */
 .image-container {
     display: flex;
@@ -419,8 +402,6 @@ select.form-control {
 
 
 /* ==================== menu end ==================== */
-
-
 
 
 /* ==================== gallary start ==================== */
