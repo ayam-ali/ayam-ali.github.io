@@ -331,7 +331,8 @@ select.form-control {
     border-radius: 50px;
     transition: 0.5s;
     text-decoration: none;
-    color: var(--color-default);
+    /*color: var(--color-default);*/
+    color: #311d1d;
     background: var(--color-primary);
     box-shadow: 0 8px 28px rgba(153, 108, 108, 0.2);
     transition: background-color 0.3s ease;
@@ -341,6 +342,7 @@ select.form-control {
 .flavor-btn:hover,
 .size-btn:hover {
     background-color: #ddd;
+    
 }
 
 /* Style the selected buttons */
